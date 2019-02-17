@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  textArea: String = '';
+
+  toggle: Boolean = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  firstClick() {
+    this.textArea = 'test';
+    this.toggle = !this.toggle;
+    console.log('click');
   }
 
 }
